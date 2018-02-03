@@ -1,0 +1,96 @@
+:host {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.input {
+	position: relative;
+}
+
+div.input label {
+	position: absolute;
+	top: 0;
+	transform: translateY(-50%);
+	left: 10px;
+	background: white;
+	padding: 5px 2px;
+}
+
+div.input input {
+	padding: 10px 20px;
+	font-size: 25px;
+	outline: 0;
+}
+
+div.input {
+	margin-top: 20px;
+}
+
+.formgroup{
+margin-top: 50px;
+margin-bottom: 20px;
+padding: 1rem 1.5rem;
+margin-left: 300px;
+}
+body {
+    
+    font-size:20px;
+    font-weight: bolders;
+    color:#228B22;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Righteous', cursive;
+    font-family: 'Cabin', sans-serif;
+   
+  }
+  
+  h6 { font-size: 1.5rem; margin-top: 0; }
+  p { margin: 0; }
+  i.large { font-size: 48px; }
+  .card,
+  .card-panel { box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14); }
+  .btn{
+      background-color: #A6D785;
+  }
+  .btn:hover{
+      background-color: #228B22;
+  }
+  .input{
+      font-weight: bold;
+  }
+  .input:hover{
+color:#A6D785;
+
+  }
+  .mb-0{
+      font-weight: bold;
+      
+  }
+  nav li {
+    
+
+    font-size: 0.8em;
+}
+
+
+
+#Side_Menu a {
+    color: #A6D785;
+    font-weight: bold;
+}
+
+#Side_Menu .active a {
+    color: #ffffff;
+    background-color: #228B22;
+    font-weight: bold;
+}
+
+#Side_Menu a:hover {
+    color: #ffffff;
+    background-color:#228B22 ;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+}
+

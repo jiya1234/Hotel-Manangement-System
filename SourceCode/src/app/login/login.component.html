@@ -1,0 +1,59 @@
+<div class="cont">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center text-white mb-4">Signin As Registered Engineer </h2>
+                    <div class="row">
+                        <div class="col-md-6 mx-auto">
+                            <span class="anchor" id="formLogin"></span>
+        
+                            <!-- form card login -->
+                            
+                            <div class="card rounded-0">
+                                <div class="card-header">
+                                    <h3 class="mb-0">Sign In</h3>
+                                    
+                                </div>
+                                  <!-- <p style="color:red">Note: <i>Make sure you've pec Active Account.</i></p> -->
+                                <div class="card-body">
+                                    <form class="form" role="form" autocomplete="off" id="formLogin" (submit)="onLoginSubmit()" #f="ngForm">
+                                        <div class="form-group">
+                                                <i class="fa fa-user" aria-hidden="true"></i>
+                                            <label for="uname1"><b>Email</b></label>
+                                            <input type="text" [(ngModel)]="email" placeholder="Enter Email Address" class="form-control form-control-lg rounded-0" name="email" id="uusername" required>
+                                        </div>
+                                        <div class="form-group">
+                                                <i class="fa fa-key fa-fw"></i>
+                                            <label for="uname1"><b>Password</b></label>
+                                            <input type="password" [(ngModel)]="password" placeholder="Enter Password" class="form-control form-control-lg rounded-0" name="password" id="upassword" required="" autocomplete="new-password">
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <label style="text-align:center;">Don't have Account? Create Account today: <a href="/signup">Signup Today?</a></label>
+                                                <br>
+                                                 <label> </label>
+                                            </div>
+                                            <label class="custom-control custom-checkbox">
+                                              <input type="checkbox" class="custom-control-input">
+                                              <span class="custom-control-indicator"></span>
+                                              <span class="custom-control-description small">Remember me on this computer</span>
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="btn btn-success btn-lg float-right" [disabled]="!f.valid">Login</button>
+                                    </form>
+                                </div>
+                                <!--/card-block-->
+                            </div>
+                            <!-- /form card login -->
+                        </div>
+                    </div>
+                    <!--/row-->
+                </div>
+                <!--/col-->
+            </div>
+            <!--/row-->
+        </div>
+        <!--/container-->
+        
+        </div>
+        

@@ -1,0 +1,45 @@
+
+
+<div class ="container">
+    <h2 class = "page-header"> ADD DATA</h2>
+    <form (submit)= "addAdmin()">
+        <div class = "form-group">
+          <label> Name</label>
+          <input type = "text" [(ngModel)] = "name" name = "name" class = "form-control">
+        </div>
+        <div class = "form-group">
+            <label>PEC ID</label>
+            <input type = "text" [(ngModel)] = "PEC_ID" name = "PEC_ID" class = "form-control">
+        </div>  
+        <div class = "form-group">
+              <label>Email</label>
+              <input type = "text" [(ngModel)] = "email" name = "email" class = "form-control" required>
+        </div>
+        <div class = "form-group">
+            <label>Cnic</label>
+            <input type = "text" [(ngModel)] = "cnic" name = "cnic" class = "form-control" required>
+      </div>
+        <input type= "submit" class = "btn btn btn-success" value = "Add">  
+    </form>
+  </div>
+  <hr>
+  <div class = "container">
+      <div *ngFor = "let admin of admins">
+        <div class = "col-md-3">
+          {{admin.name}}
+        </div>
+        <div class = "col-md-3">
+            {{admin.PEC_ID}}
+        </div>
+        <div class = "col-md-3">
+              {{admin.email}}
+        </div>
+        <div class = "col-md-3">
+            {{admin.cnic}}
+      </div>
+        <div class = "col-md-3">
+          <input type= "button" (click) = "deleteContact(contact._id)" value = "Delete" class = "btn btn-danger">
+          <br><br>
+        </div>
+      </div>
+  </div>

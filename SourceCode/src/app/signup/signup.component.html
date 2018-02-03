@@ -1,0 +1,78 @@
+
+<div class="container py-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center text-white mb-4">Login Form</h2>
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
+                        <span class="anchor" id="formLogin"></span>
+    
+                        <!-- form card login -->
+                        
+                        <div class="card rounded-0">
+                            <div class="card-header">
+                                <h3 class="mb-0">Create  Profile</h3>
+                            </div>
+                            <div class="card-body">
+                                <form class="form" role="form" autocomplete="off" id="formLogin" (submit)="onRegisterSubmit()">
+                                   <div class="form-group">
+                                            <label><b><i class="fa fa-address-card" aria-hidden="true"></i> PEC-ID</b></label>
+                                            <input type="text" [(ngModel)]="pecid" placeholder="Example: PEC-XXX" class="form-control form-control-lg rounded-0" name="pecid"  required="">
+                                            </div>
+                                    <div class="form-group">
+                                        <label><b><i class="fa fa-id-card-o" aria-hidden="true"></i> CNIC</b></label>
+                                        <input type="text" [(ngModel)]="cnic" placeholder="Example: XXXX-XXXXXXX-X" class="form-control form-control-lg rounded-0" name="cnic"  required="">
+                                    </div>
+                                    <div class="form-group">
+                                            <label><b><i class="fa fa-user-circle" aria-hidden="true"></i> Name</b></label>
+                                            <input type="text" [(ngModel)]="name" placeholder="Enter Your name " class="form-control form-control-lg rounded-0" name="name"  required="">
+                                        </div>
+                                    <div class="form-group">
+                                        <label><b><i class="fa fa-envelope-open-o" aria-hidden="true"></i> EMAIL</b></label>
+                                        <input type="text" [(ngModel)]="email" placeholder="Format: abc@company.com" class="form-control form-control-lg rounded-0" name="email"  required="" >
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="uname1"><b>Username</b></label>
+                                        <input type="text" [(ngModel)]="username" placeholder="Username" class="form-control form-control-lg rounded-0" name="username"  required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="uname1"><b>Password</b></label>
+                                        <input type="password" [(ngModel)]="password" placeholder="Password" class="form-control form-control-lg rounded-0" name="password"  required="" autocomplete="new-password">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="uname1"><b>Confirm Password</b></label>
+                                        <input type="password" [(ngModel)]="cpassword" placeholder="Re-Enter Password" class="form-control form-control-lg rounded-0" name="cpassword"  required="" autocomplete="new-password">
+                                    </div>
+                                    <div class="form-group">
+                                            <label><b><i class="fa fa-user-circle" aria-hidden="true"></i>CELL</b></label>
+                                            <input type="text" [(ngModel)]="phone" placeholder="03XX-XXXXXXX" class="form-control form-control-lg rounded-0" name="phone"  required="">
+                                        </div>
+                                    <div>
+                                        <div>
+                                            <label style="text-align:center;"> have an account? <a routerLink="/login">Login</a></label>
+                                            <br>
+                                             <label> </label>
+                                        </div>
+                                        <label class="custom-control custom-checkbox">
+                                          <input type="checkbox" class="custom-control-input">
+                                          <span class="custom-control-indicator"></span>
+                                          <span class="custom-control-description small">Remember me on this computer</span>
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-success btn-lg float-right">Submit</button>
+                                </form>
+                            </div>
+                            <!--/card-block-->
+                        </div>
+                        <!-- /form card login -->
+                    </div>
+                </div>
+                <!--/row-->
+            </div>
+            <!--/col-->
+        </div>
+        <!--/row-->
+    </div>
+    <!--/container-->
+    
+    
